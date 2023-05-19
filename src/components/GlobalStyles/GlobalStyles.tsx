@@ -9,13 +9,14 @@ import "@fontsource/public-sans/700.css";
 const GlobalStyles = createGlobalStyle`
 
 :root {
+    --black: #111;
     --white: #fff;
     --btnColor: #8BDAE3;
     --textColor: #9a9b9d;
     --footerBg: #1B2230;
     --box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     --font-publicSans: 'Public Sans', sans-serif;
-    --transition: all .3s ease;
+    --transition: all .5s ease;
 }
 
 *,
@@ -28,12 +29,13 @@ const GlobalStyles = createGlobalStyle`
 }
 
 body {
-  background-color: var(--white);
-  font-family: var(--font-publicSans);
+    background-color: var(--white);
+    font-family: var(--font-publicSans);
 	overflow-x: hidden;
 }
 
 a {
+    font-size: 1.2rem;
     text-decoration: none;
     cursor: pointer;
 }
@@ -69,7 +71,7 @@ button {
     border-radius: 30px;
     background: rgb(35,236,89);
     background: linear-gradient(114deg, rgba(35,236,89,1) 0%, rgba(20,230,143,1) 30%, rgba(13,221,171,1) 49%, rgba(0,212,255,1) 99%);
-    padding: .8rem 5rem;
+    padding: .8rem 3rem;
     transition-property: background;
     transition: var(--transition);
     cursor: pointer;
@@ -95,7 +97,7 @@ button:hover::before {
     opacity: 1;
 }
 
-.wrapper {
+.container {
     width: 90%;
     margin: auto;
     flex-wrap: wrap;

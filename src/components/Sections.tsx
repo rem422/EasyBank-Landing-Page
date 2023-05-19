@@ -1,9 +1,11 @@
-import Header from "./HeaderSection/Header"
+import Navbar from "./NavbarSection/Navbar"
+import Hero from './HeroSection/Hero'
 
 const index = () => {
   return (
     <>
-    <Header />
+    <Navbar />
+    <Hero />
     </>
   )
 }

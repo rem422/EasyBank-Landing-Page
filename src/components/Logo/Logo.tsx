@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import LogoImg from '../../assets/logo.svg';
 
+
+
 const Logo = ({...rest}) => {
     return (
         <LogoStyles {...rest}>
@@ -10,7 +12,7 @@ const Logo = ({...rest}) => {
 }
 
 const LogoStyles = styled.div`
-    max-width: 180px;
+    max-width: 220px;
 
 img {
     width: 100%;
@@ -20,7 +22,7 @@ img {
 }
 
 @media only screen and (max-width:500px) {
-    max-width: 100px;
+    max-width: 150px;
 }
 
 `;
