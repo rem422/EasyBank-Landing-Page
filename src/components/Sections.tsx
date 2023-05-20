@@ -1,11 +1,13 @@
-import Navbar from "./NavbarSection/Navbar"
-import Hero from './HeroSection/Hero'
+import NavbarSection from "./NavbarSection/Navbar"
+import HeroSection from './HeroSection/Hero'
+import AboutSection from "./AboutSection/About"
 
 const index = () => {
   return (
     <>
-    <Navbar />
-    <Hero />
+    <NavbarSection />
+    <HeroSection />
+    <AboutSection />
     </>
   )
 }

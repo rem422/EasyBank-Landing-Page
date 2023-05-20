@@ -3,12 +3,12 @@ import styled from "styled-components"
 import { Link } from 'react-scroll'
 import Logo from "../Logo/Logo"
 import Button from "../Button/Button"
-import { FiMenu } from 'react-icons/fi'
-import { GrClose } from 'react-icons/gr'
+import { GrMenu,GrClose } from 'react-icons/gr'
 
 const Navbar = () => {
 
 const[shadow, setShadow] = useState(false);
+
 const navShadow = () => {
   if(window.scrollY > 30) {
     setShadow(true);
@@ -22,6 +22,7 @@ useEffect(() => {
 });
 
 const[toggle, setToggle] = useState(false);
+
 const handleToggle = () => {
   setToggle(!toggle);
 };
@@ -44,12 +45,12 @@ const handleToggle = () => {
                   <Link to="contact" onClick={handleToggle}>Contact</Link>
                 </li>
                 <li className="nav_link">
-                  <Link to="careers" onClick={handleToggle}>Careers</Link>
+                  <Link to="blog" onClick={handleToggle}>Blog</Link>
                 </li>
                 <Button clicked={handleToggle} text="Request Invite"/>
               </ul>
               <div className="menu_btn" onClick={handleToggle}>
-                {toggle ? <GrClose /> : <FiMenu />}
+                {toggle ? <GrClose /> : <GrMenu />}
               </div>
             </div>
         </div>
@@ -66,7 +67,7 @@ height: auto;
 padding: 1rem 0;
 background-color: var(--white);
 transition: var(--transition);
-z-index: 999;
+z-index: 1000;
 
 &.sticky {
   box-shadow: var(--box-shadow);
@@ -97,7 +98,7 @@ z-index: 999;
 .nav_menu .nav_link a::before{
   content: "";
   position: absolute;
-  top: 47px;
+  top: 44px;
   left: 0;
   width: 0;
   height: 3px;
@@ -106,7 +107,10 @@ z-index: 999;
   transition: var(--transition);
 }
 
-.nav_menu .nav_link:nth-child(3) a::before, 
+.nav_menu .nav_link:nth-child(3) a::before {
+  width: 0;
+}
+
 .nav_menu .nav_link:nth-child(4) a::before {
   width: 0;
 }
@@ -120,10 +124,12 @@ z-index: 999;
   width: 55px;
 }
 
-
-.nav_menu .nav_link:nth-child(3) a:hover::before, 
-.nav_menu .nav_link:nth-child(4) a:hover::before {
+.nav_menu .nav_link:nth-child(3) a:hover::before {
   width: 70px;
+}
+
+.nav_menu .nav_link:nth-child(4) a:hover::before {
+  width: 40px;
 }
 
 .nav_menu button{
@@ -169,8 +175,6 @@ z-index: 999;
   top: 80px;
 }
 
-
-
 .nav_menu .nav_link {
   margin: 2rem 0;
   padding: 0 .8rem;
@@ -184,18 +188,9 @@ z-index: 999;
   top: 30px;
 }
 
-
 .nav_menu button{
   margin-left: 0;
 }
 }
-
-
-
-    
 `
-
 export default Navbar
-
-            
-

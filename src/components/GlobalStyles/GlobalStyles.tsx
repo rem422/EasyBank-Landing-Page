@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
     --footerBg: #1B2230;
     --box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     --font-publicSans: 'Public Sans', sans-serif;
-    --transition: all .5s ease;
+    --transition: all .4s ease;
 }
 
 *,
@@ -43,7 +43,7 @@ a {
 h1, h2, h3, h4, h5{
     color: var(--footerBg);
     font-family: var(--font-publicSans);
-    font-weight: 600;
+    font-weight: 300;
 }
 
 ul,
@@ -71,7 +71,7 @@ button {
     border-radius: 30px;
     background: rgb(35,236,89);
     background: linear-gradient(114deg, rgba(35,236,89,1) 0%, rgba(20,230,143,1) 30%, rgba(13,221,171,1) 49%, rgba(0,212,255,1) 99%);
-    padding: .8rem 3rem;
+    padding: .6rem 2rem;
     transition-property: background;
     transition: var(--transition);
     cursor: pointer;
