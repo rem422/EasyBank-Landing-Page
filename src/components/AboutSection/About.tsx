@@ -50,6 +50,7 @@ position: relative;
     background-color: #F4F5F7;
     bottom: 254px;
     z-index: -999;
+    height: 100%;
 
 .about_wrapper {
     padding: 10% 0;
@@ -73,7 +74,6 @@ position: relative;
     grid-gap: 2rem;
     margin-top: 5rem;
 }
-
 
 @media only screen and (max-width:1280px) {
     bottom: 0;
@@ -107,11 +107,9 @@ margin-top: 4rem;
 
 @media only screen and (max-width:500px) {
 .about_wrapper .about_info .about_info-title {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 }
-
-
 `
 
 export default About

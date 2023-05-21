@@ -1,17 +1,9 @@
-import { useState } from 'react'
 import styled from 'styled-components'
 import heroBg from '../../assets/bg-intro-desktop.svg'
 import heroMobileBg from '../../assets/bg-intro-mobile.svg'
 import heroImg from '../../assets/image-mockups.png'
-import Button from '../Button/Button'
 
 const Hero = () => {
-
-const[toggle, setToggle] = useState(false);
-const handleToggle = () => {
-  setToggle(!toggle);
-};
-
   return (
     <HeroSection id='hero'>
       <div className="container">
@@ -21,7 +13,7 @@ const handleToggle = () => {
             <p className="hero_info-text">
               Take your financial life online. Your Easybank account will be one-stop-shop for spending, saving, budgeting, investing and much more.
             </p>
-            <Button text='Request Invite' clicked={handleToggle} />
+            <button>Request Invite</button>
           </div>
           <div className="hero_img">
             <img src={heroImg} alt="img" />
