@@ -52,7 +52,8 @@ li {
     list-style: none;
 }
 
-p {
+p, 
+span {
     color: var(--textColor);
 }
 

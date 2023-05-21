@@ -24,6 +24,7 @@ const Contact = () => {
 const ContactSection = styled.div`
     position: relative;
     bottom: 100px;
+    z-index: -1;
 
     .contact_title {
         display: flex;
@@ -64,6 +65,7 @@ const ContactSection = styled.div`
 
     .contact_wrapper button{
         margin-top: 2rem;
+        z-index: 1;
     }
 
     .contact_wrapper .contact_name {
