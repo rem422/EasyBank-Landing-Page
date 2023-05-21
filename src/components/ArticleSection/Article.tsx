@@ -57,7 +57,6 @@ margin: 2rem 0;
     margin: 5rem 0;
   }
 
-
 @media only screen and (max-width:1280px) {
 .articleCards_wrapper {
     grid-template-columns: repeat(3, auto);
@@ -80,10 +79,6 @@ margin: 2rem 0;
     grid-template-columns: 100%;
 }
 }
-
-
-
-
 `
 
 export default Article

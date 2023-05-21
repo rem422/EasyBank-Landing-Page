@@ -42,12 +42,16 @@ const Card = styled.div`
 .card_wrapper .card_title,
 .card_wrapper .card_text {
   padding: 1rem 1.2rem 0 1.2rem;
+  transition: var(--transition);
+}
+
+&:hover .card_wrapper .card_title {
+  color: rgb(35,236,89);
 }
 
 .card_wrapper .card_text {
   padding-bottom: 1.5rem;
 }
-
 
 @media only screen and (max-width: 768px) {
   max-width: 90%;
@@ -56,13 +60,6 @@ const Card = styled.div`
 @media only screen and (max-width: 500px) {
   max-width: 100%;
 }
-
-
-
-
-
-
-
 `
 
 export default ArticleCard
