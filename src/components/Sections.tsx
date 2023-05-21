@@ -3,6 +3,7 @@ import HeroSection from './HeroSection/Hero'
 import AboutSection from "./AboutSection/About"
 import ContactSection from "./ContactSection/Contact"
 import ArticleSection from "./ArticleSection/Article"
+import FooterSection from "./FooterSection/Footer"
 
 const index = () => {
   return (
@@ -12,6 +13,7 @@ const index = () => {
     <AboutSection />
     <ContactSection />
     <ArticleSection />
+    <FooterSection />
     </>
   )
 }

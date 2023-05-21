@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import styled from "styled-components"
 import AboutCard from './AboutCard'
 
@@ -7,6 +8,7 @@ import onboarding from '../../assets/icon-onboarding.svg'
 import api from '../../assets/icon-api.svg'
 
 const About = () => {
+
   return (
     <AboutSection id="about">
         <div className="container">
@@ -18,7 +20,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className="aboutCard_wrapper">
-                    <AboutCard 
+                    <AboutCard data-aos="fade-left"
                         image= {online}
                         title="Online Banking"
                         text="Our modern web and mobile applications allows you to keep track of your finances wherever you are in the world."
