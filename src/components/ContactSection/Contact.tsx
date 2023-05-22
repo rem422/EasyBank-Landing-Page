@@ -24,7 +24,7 @@ const Contact = () => {
 const ContactSection = styled.div`
     position: relative;
     bottom: 100px;
-    z-index: -1;
+    /* z-index: inherit; */
 
     .contact_title {
         display: flex;
@@ -45,6 +45,7 @@ const ContactSection = styled.div`
         margin: auto;
         border-radius: 10px;
         padding: 1rem;
+        z-index: -1;
     }
 
     .contact_wrapper input,
@@ -65,7 +66,7 @@ const ContactSection = styled.div`
 
     .contact_wrapper button{
         margin-top: 2rem;
-        z-index: 1;
+        z-index: initial;
     }
 
     .contact_wrapper .contact_name {
